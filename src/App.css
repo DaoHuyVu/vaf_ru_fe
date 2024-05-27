@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.BoardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.datePickerContainer{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-left : auto;
+}
+.datePicker{
+  width: fit-content;
+}
+.BoardContainer h2{
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+table{
+  margin : 20px auto 50px auto;
+  border: 1px solid black;
+  border-collapse :collapse;
+  width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th,tr,td{
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding : 10px;
+  font: 1em sans-serif;
+  font-weight: bold;
+}
+thead {
+  background-color: #009879;
+  color: #ffffff;
+}
+tr:nth-child(even){
+  color: #009879;
+  background-color: #f3f3f3;
+  font-weight: bold;
 }
